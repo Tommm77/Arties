@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Bob Mercier - Trabendo",
+    "id": 0,
+    "artist": 1
+  },
+  {
+    "name": "Bob Mercier - Antre Magique ",
+    "id": 1,
+    "artist": 1
+  },
+  {
+    "name": "Jean Dujardin - Olympic Café",
+    "id": 2,
+    "artist": 2
+  },
+  {
+    "name": "Jean Dujardin - Royal",
+    "id": 3,
+    "artist": 2
+  },
+  {
+    "name": "Valerie Lermercier - La Cigale",
+    "id": 4,
+    "artist": 3
+  },
+  {
+    "name": "Valerie Lermercier - Olympia",
+    "id": 5,
+    "artist": 3
+  },
+  {
+    "name": "Bob Dylan - La Cigale",
+    "id": 6,
+    "artist": 4
+  },
+  {
+    "name": "Bob Dylan - Palace",
+    "id": 7,
+    "artist": 4
+  }
+]
