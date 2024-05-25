@@ -20,7 +20,7 @@ npm run start:dev
 3 tables dans notre db:
 
 - Artists : `artists.json`, `id: number; name: string`
-- Events : `events.json`, `id: number; artist: artist ID; name: string`
+- Events : `events.json`, `id: number; artists: artists ID; name: string`
 - Occurrences : `occurrences.json`, `id: number; event: event ID; time: string`
 
 Relations :
@@ -38,7 +38,7 @@ Le but de l'exercice est de construire des endpoints pour notre API (autre que `
 
 Si l'artiste avec l'ID est trouvé, renvoie code `200` et l'artiste en question en JSON. Sinon renvoie code d'erreur `404`.
 
-Si il y a `?withEvents=true`, "populater" `artist.events` avec les évènements de l'artiste **seulement les évènements qui ont au moins une occurence dans le futur**. Sinon ne pas populater `artist.events`.
+Si il y a `?withEvents=true`, "populater" `artists.events` avec les évènements de l'artiste **seulement les évènements qui ont au moins une occurence dans le futur**. Sinon ne pas populater `artists.events`.
 
 Exemple de réponse :
 
@@ -49,7 +49,7 @@ Exemple de réponse :
     "events": [{
         "name": "Jean Dujardin - Olympic Café",
         "id": 2,
-        "artist": 2
+        "artists": 2
     }]
   },
 ```
@@ -60,7 +60,7 @@ Exemple de réponse :
 
 Si l'event avec l'ID est trouvé, renvoie code `200` et l'event en question en JSON. Sinon renvoie code d'erreur `404`.
 
-Si il y a `?withArtist=true`, "populater" `event.artist` avec l'artiste. Sinon ne pas populater `event.artist`.
+Si il y a `?withArtist=true`, "populater" `event.artists` avec l'artiste. Sinon ne pas populater `event.artists`.
 
 Exemple de réponse :
 
@@ -68,7 +68,7 @@ Exemple de réponse :
 {
   "name": "Bob Dylan - Palace",
   "id": 7,
-  "artist": {
+  "artists": {
     "name": "Bob Dylan",
     "id": 4
   }
